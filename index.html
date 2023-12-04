@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Document</title>
@@ -31,6 +37,26 @@
       </figure>-->
       </div>
       <button class="pass-turn hidden">Passa il turno</button>
+    </div>
+    <div class="draw-1 modal hidden">
+      <button class="close-modal-1">&times;</button>
+      <p>
+        L'avversario ha pescato una carta dalla tua mano; tu pescane una dalla
+        sua
+      </p>
+    </div>
+    <div class="overlay-1 hidden"></div>
+    <div class="discard-doubles modal hidden">
+      <button class="close-modal-doubles">&times;</button>
+      <p>Scarta eventuali doppioni</p>
+    </div>
+    <div class="win modal hidden">
+      <p>Hai vinto!!</p>
+      <button class="other-game-win">Un'altra partita?</button>
+    </div>
+    <div class="lose modal hidden">
+      <p>Hai perso!!</p>
+      <button class="other-game-lose">Un'altra partita?</button>
     </div>
   </body>
 </html>

@@ -7,6 +7,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 
 .hands-container {
@@ -46,4 +47,86 @@ img {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1864ab86;
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal-1 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.close-modal-doubles {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.win {
+  background-color: #228be6;
+  text-align: center;
+}
+
+.lose {
+  background-color: #63e6be;
+  text-align: center;
+}
+
+.other-game-win {
+  height: 2.6rem;
+  width: 19rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffe066;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.other-game-lose {
+  height: 2.6rem;
+  width: 19rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #a9e34b;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
 }
