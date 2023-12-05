@@ -14,6 +14,9 @@ const winModal = document.querySelector(".win");
 const loseModal = document.querySelector(".lose");
 const otherGameLose = document.querySelector(".other-game-lose");
 const otherGameWin = document.querySelector(".other-game-win");
+const instructionsButton = document.querySelector(".instructions-button");
+const closeInstructions = document.querySelector(".close-instructions");
+const instructions = document.querySelector(".instructions");
 
 class Card {
   constructor(number, description, image) {
@@ -38,6 +41,12 @@ let deck = [
   new Card(11, "C6", "img/C6.jpg"),
   new Card(12, "C6", "img/C6.jpg"),
   new Card(13, "C7", "img/C7.jpg"),
+  new Card(14, "C8", "img/C8.jpg"),
+  new Card(15, "C8", "img/C8.jpg"),
+  new Card(16, "C9", "img/C9.jpg"),
+  new Card(17, "C9", "img/C9.jpg"),
+  new Card(18, "C10", "img/C10.jpg"),
+  new Card(19, "C10", "img/C10.jpg"),
 ];
 
 function newDeck() {
@@ -55,6 +64,12 @@ function newDeck() {
     new Card(11, "C6", "img/C6.jpg"),
     new Card(12, "C6", "img/C6.jpg"),
     new Card(13, "C7", "img/C7.jpg"),
+    new Card(14, "C8", "img/C8.jpg"),
+    new Card(15, "C8", "img/C8.jpg"),
+    new Card(16, "C9", "img/C9.jpg"),
+    new Card(17, "C9", "img/C9.jpg"),
+    new Card(18, "C10", "img/C10.jpg"),
+    new Card(19, "C10", "img/C10.jpg"),
   ];
 }
 
@@ -375,4 +390,16 @@ otherGameWin.addEventListener("click", function () {
   passed = false;
   drawPhase = false;
   init();
+});
+
+/* Aprire/chiudere la finestra con le istruzioni */
+
+instructionsButton.addEventListener("click", function () {
+  instructions.classList.remove("hidden");
+  overlay1.classList.remove("hidden");
+});
+
+closeInstructions.addEventListener("click", function () {
+  instructions.classList.add("hidden");
+  overlay1.classList.add("hidden");
 });

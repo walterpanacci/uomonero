@@ -10,6 +10,50 @@ html {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.instructions-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #e64980;
+}
+.solo-quando {
+  color: #e64980;
+}
+
+.instructions-image {
+  width: 20rem;
+}
+
+.close-instructions {
+  width: 4rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  background-color: #e64980;
+  cursor: pointer;
+}
+
 .hands-container {
   display: flex;
   flex-direction: column;
@@ -27,6 +71,25 @@ html {
   gap: 0.5rem;
   flex-wrap: wrap;
   overflow: auto;
+}
+
+form {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.player-hand {
+  height: 54rem;
+}
+
+.player-card {
+  height: 27rem;
 }
 
 .player-hand {
@@ -69,7 +132,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #1864ab86;
   backdrop-filter: blur(3px);
   z-index: 5;

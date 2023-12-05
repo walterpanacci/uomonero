@@ -14,6 +14,27 @@
     <title>Document</title>
   </head>
   <body>
+    <button class="instructions-button">Istruzioni</button>
+    <div class="instructions modal hidden">
+      <p>
+        Lo scopo del gioco è scartare le carte uguali che si hanno in mano;
+        perde chi rimane con in mano la carta dell'uomo nero, l'unica del mazzo
+        a non avere una copia, ossia l'unica che non può venire scartata.
+      </p>
+      <img class="instructions-image" src="img/C7.jpg" />
+      <p>
+        All'inizio del gioco vengono distribuite le carte fra i due giocatori e
+        ciascuno scarta coppie di carte uguali.
+        <span class="solo-quando"> SOLO QUANDO</span> avrai scartato tutte le
+        coppie comparità un pulsante, col quale potrai passare il turno al tuo
+        avversario, che pescherà una carta dalla tua mano e scarterà evetnuali
+        doppioni. A quel punto toccherà a te pescare una sua carta e scartare i
+        tuoi doppioni. Questa alternanza procede finché uno dei due giocatori
+        non rimane senza carte in mano, e l'altro con il solo uomo nero.
+        <span class="solo-quando"> Buon divertimento!!</span>
+      </p>
+      <button class="close-instructions">Ok!!</button>
+    </div>
     <div class="hands-container">
       <div class="cpu-hand">
         <!--<figure class="card">
@@ -21,22 +42,24 @@
         <div class="image">Qua andrà il retro della carta</div>
       </figure>-->
       </div>
-      <form class="discarder">
-        <label for="first"
-          >Scegli il numero della prima carta da scartare</label
-        >
-        <input id="first" class="first" type="number" />
-        <label for="second">Scegli la seconda carta da scartare</label>
-        <input type="number" class="second" id="second" />
-        <button class="discard">Scarta!</button>
-      </form>
+      <figure class="buttons">
+        <form class="discarder">
+          <label for="first"
+            >Scegli il numero della prima carta da scartare</label
+          >
+          <input id="first" class="first" type="number" />
+          <label for="second">Scegli la seconda carta da scartare</label>
+          <input type="number" class="second" id="second" />
+          <button class="discard">Scarta!</button>
+        </form>
+        <button class="pass-turn hidden">Passa il turno</button>
+      </figure>
       <div class="player-hand">
         <!--<figure class="card" description="dylan">
         <h1 class="card-number">1</h1>
         <img class="image" src="img/C1.jpg" />
       </figure>-->
       </div>
-      <button class="pass-turn hidden">Passa il turno</button>
     </div>
     <div class="draw-1 modal hidden">
       <button class="close-modal-1">&times;</button>
