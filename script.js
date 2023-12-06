@@ -371,6 +371,7 @@ closeModalDoubles.addEventListener("click", function () {
 otherGameLose.addEventListener("click", function () {
   loseModal.classList.add("hidden");
   overlay1.classList.add("hidden");
+  passTurn.classList.add("hidden");
   newDeck();
   playerHand = [];
   cpuHand = [];
@@ -383,6 +384,7 @@ otherGameLose.addEventListener("click", function () {
 otherGameWin.addEventListener("click", function () {
   winModal.classList.add("hidden");
   overlay1.classList.add("hidden");
+  passTurn.classList.add("hidden");
   newDeck();
   playerHand = [];
   cpuHand = [];
