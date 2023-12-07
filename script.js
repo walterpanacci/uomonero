@@ -318,6 +318,7 @@ passTurn.addEventListener("click", function () {
   /*draw2.classList.remove("hidden");
   overlay2.classList.remove("hidden");*/
   drawPhase = true;
+ passTurn.classList.add("hidden");////
   ///IL BOTTONE PER PASSARE IL TURNO VIENE NASCOSTO//
 });
 //IL GIOCATORE SCARTA SE PUò E PASSA IL TURNO//
