@@ -294,9 +294,9 @@ passTurn.addEventListener("click", function () {
   }
 
   /* Il computer mischia le carte che ha in mano */
-  console.log(cpuHand);
+  //console.log(cpuHand);
   cpuHand = shuffle(cpuHand);
-  console.log(cpuHand);
+  //console.log(cpuHand);
 
   /* La visualizzazione delle mani viene aggiornata */
   cpuHandRender();
@@ -351,7 +351,7 @@ cpuHandEl.addEventListener("click", function (e) {
     else el.count = false;
     return;
   });
-  console.log(playerHand);
+  //console.log(playerHand);
 
   /* Il bottone per passare il turno compare solo se il giocatore ha scartato tutti i doppioni */
   if (playerHand.every((el) => el.count === false))
